@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80D156511C2E5FC100DF6291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156501C2E5FC100DF6291 /* main.m */; };
+		80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156531C2E5FC100DF6291 /* AppDelegate.m */; };
+		80D156571C2E5FC100DF6291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156561C2E5FC100DF6291 /* ViewController.m */; };
+		80D1565A1C2E5FC100DF6291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D156581C2E5FC100DF6291 /* Main.storyboard */; };
+		80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D1565B1C2E5FC100DF6291 /* Assets.xcassets */; };
+		80D1565F1C2E5FC100DF6291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */; };
+		80D1566A1C2E5FC200DF6291 /* Nexusmail_PlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156691C2E5FC200DF6291 /* Nexusmail_PlusTests.m */; };
+		80D156751C2E5FC200DF6291 /* Nexusmail_PlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156741C2E5FC200DF6291 /* Nexusmail_PlusUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80D156661C2E5FC200DF6291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D156441C2E5FC100DF6291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80D1564B1C2E5FC100DF6291;
+			remoteInfo = "Nexusmail Plus";
+		};
+		80D156711C2E5FC200DF6291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D156441C2E5FC100DF6291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80D1564B1C2E5FC100DF6291;
+			remoteInfo = "Nexusmail Plus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80D1564C1C2E5FC100DF6291 /* Nexusmail Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nexusmail Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D156501C2E5FC100DF6291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80D156521C2E5FC100DF6291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80D156531C2E5FC100DF6291 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80D156551C2E5FC100DF6291 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		80D156561C2E5FC100DF6291 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80D156591C2E5FC100DF6291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80D1565B1C2E5FC100DF6291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80D1565E1C2E5FC100DF6291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80D156601C2E5FC100DF6291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D156651C2E5FC200DF6291 /* Nexusmail PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nexusmail PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D156691C2E5FC200DF6291 /* Nexusmail_PlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nexusmail_PlusTests.m; sourceTree = "<group>"; };
+		80D1566B1C2E5FC200DF6291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D156701C2E5FC200DF6291 /* Nexusmail PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nexusmail PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D156741C2E5FC200DF6291 /* Nexusmail_PlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nexusmail_PlusUITests.m; sourceTree = "<group>"; };
+		80D156761C2E5FC200DF6291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80D156491C2E5FC100DF6291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D156621C2E5FC200DF6291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D1566D1C2E5FC200DF6291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80D156431C2E5FC100DF6291 = {
+			isa = PBXGroup;
+			children = (
+				80D1564E1C2E5FC100DF6291 /* Nexusmail Plus */,
+				80D156681C2E5FC200DF6291 /* Nexusmail PlusTests */,
+				80D156731C2E5FC200DF6291 /* Nexusmail PlusUITests */,
+				80D1564D1C2E5FC100DF6291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80D1564D1C2E5FC100DF6291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D1564C1C2E5FC100DF6291 /* Nexusmail Plus.app */,
+				80D156651C2E5FC200DF6291 /* Nexusmail PlusTests.xctest */,
+				80D156701C2E5FC200DF6291 /* Nexusmail PlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D1564E1C2E5FC100DF6291 /* Nexusmail Plus */ = {
+			isa = PBXGroup;
+			children = (
+				80D156521C2E5FC100DF6291 /* AppDelegate.h */,
+				80D156531C2E5FC100DF6291 /* AppDelegate.m */,
+				80D156551C2E5FC100DF6291 /* ViewController.h */,
+				80D156561C2E5FC100DF6291 /* ViewController.m */,
+				80D156581C2E5FC100DF6291 /* Main.storyboard */,
+				80D1565B1C2E5FC100DF6291 /* Assets.xcassets */,
+				80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */,
+				80D156601C2E5FC100DF6291 /* Info.plist */,
+				80D1564F1C2E5FC100DF6291 /* Supporting Files */,
+			);
+			path = "Nexusmail Plus";
+			sourceTree = "<group>";
+		};
+		80D1564F1C2E5FC100DF6291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80D156501C2E5FC100DF6291 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80D156681C2E5FC200DF6291 /* Nexusmail PlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				80D156691C2E5FC200DF6291 /* Nexusmail_PlusTests.m */,
+				80D1566B1C2E5FC200DF6291 /* Info.plist */,
+			);
+			path = "Nexusmail PlusTests";
+			sourceTree = "<group>";
+		};
+		80D156731C2E5FC200DF6291 /* Nexusmail PlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80D156741C2E5FC200DF6291 /* Nexusmail_PlusUITests.m */,
+				80D156761C2E5FC200DF6291 /* Info.plist */,
+			);
+			path = "Nexusmail PlusUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80D1564B1C2E5FC100DF6291 /* Nexusmail Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D156791C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail Plus" */;
+			buildPhases = (
+				80D156481C2E5FC100DF6291 /* Sources */,
+				80D156491C2E5FC100DF6291 /* Frameworks */,
+				80D1564A1C2E5FC100DF6291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nexusmail Plus";
+			productName = "Nexusmail Plus";
+			productReference = 80D1564C1C2E5FC100DF6291 /* Nexusmail Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80D156641C2E5FC200DF6291 /* Nexusmail PlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D1567C1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusTests" */;
+			buildPhases = (
+				80D156611C2E5FC200DF6291 /* Sources */,
+				80D156621C2E5FC200DF6291 /* Frameworks */,
+				80D156631C2E5FC200DF6291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80D156671C2E5FC200DF6291 /* PBXTargetDependency */,
+			);
+			name = "Nexusmail PlusTests";
+			productName = "Nexusmail PlusTests";
+			productReference = 80D156651C2E5FC200DF6291 /* Nexusmail PlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80D1566F1C2E5FC200DF6291 /* Nexusmail PlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D1567F1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusUITests" */;
+			buildPhases = (
+				80D1566C1C2E5FC200DF6291 /* Sources */,
+				80D1566D1C2E5FC200DF6291 /* Frameworks */,
+				80D1566E1C2E5FC200DF6291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80D156721C2E5FC200DF6291 /* PBXTargetDependency */,
+			);
+			name = "Nexusmail PlusUITests";
+			productName = "Nexusmail PlusUITests";
+			productReference = 80D156701C2E5FC200DF6291 /* Nexusmail PlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80D156441C2E5FC100DF6291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Hoi Fung Lai";
+				TargetAttributes = {
+					80D1564B1C2E5FC100DF6291 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					80D156641C2E5FC200DF6291 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 80D1564B1C2E5FC100DF6291;
+					};
+					80D1566F1C2E5FC200DF6291 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 80D1564B1C2E5FC100DF6291;
+					};
+				};
+			};
+			buildConfigurationList = 80D156471C2E5FC100DF6291 /* Build configuration list for PBXProject "Nexusmail Plus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80D156431C2E5FC100DF6291;
+			productRefGroup = 80D1564D1C2E5FC100DF6291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80D1564B1C2E5FC100DF6291 /* Nexusmail Plus */,
+				80D156641C2E5FC200DF6291 /* Nexusmail PlusTests */,
+				80D1566F1C2E5FC200DF6291 /* Nexusmail PlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80D1564A1C2E5FC100DF6291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D1565F1C2E5FC100DF6291 /* LaunchScreen.storyboard in Resources */,
+				80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */,
+				80D1565A1C2E5FC100DF6291 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D156631C2E5FC200DF6291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D1566E1C2E5FC200DF6291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80D156481C2E5FC100DF6291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D156571C2E5FC100DF6291 /* ViewController.m in Sources */,
+				80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */,
+				80D156511C2E5FC100DF6291 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D156611C2E5FC200DF6291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D1566A1C2E5FC200DF6291 /* Nexusmail_PlusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D1566C1C2E5FC200DF6291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D156751C2E5FC200DF6291 /* Nexusmail_PlusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80D156671C2E5FC200DF6291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80D1564B1C2E5FC100DF6291 /* Nexusmail Plus */;
+			targetProxy = 80D156661C2E5FC200DF6291 /* PBXContainerItemProxy */;
+		};
+		80D156721C2E5FC200DF6291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80D1564B1C2E5FC100DF6291 /* Nexusmail Plus */;
+			targetProxy = 80D156711C2E5FC200DF6291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80D156581C2E5FC100DF6291 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D156591C2E5FC100DF6291 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D1565E1C2E5FC100DF6291 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80D156771C2E5FC200DF6291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80D156781C2E5FC200DF6291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80D1567A1C2E5FC200DF6291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nexusmail Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80D1567B1C2E5FC200DF6291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nexusmail Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80D1567D1C2E5FC200DF6291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nexusmail PlusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexusmail Plus.app/Nexusmail Plus";
+			};
+			name = Debug;
+		};
+		80D1567E1C2E5FC200DF6291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nexusmail PlusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexusmail Plus.app/Nexusmail Plus";
+			};
+			name = Release;
+		};
+		80D156801C2E5FC200DF6291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nexusmail PlusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nexusmail Plus";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		80D156811C2E5FC200DF6291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nexusmail PlusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.jlai.Nexusmail-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nexusmail Plus";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80D156471C2E5FC100DF6291 /* Build configuration list for PBXProject "Nexusmail Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D156771C2E5FC200DF6291 /* Debug */,
+				80D156781C2E5FC200DF6291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D156791C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D1567A1C2E5FC200DF6291 /* Debug */,
+				80D1567B1C2E5FC200DF6291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80D1567C1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D1567D1C2E5FC200DF6291 /* Debug */,
+				80D1567E1C2E5FC200DF6291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80D1567F1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D156801C2E5FC200DF6291 /* Debug */,
+				80D156811C2E5FC200DF6291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80D156441C2E5FC100DF6291 /* Project object */;
+}
