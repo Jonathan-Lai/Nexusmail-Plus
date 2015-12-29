@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		80D156511C2E5FC100DF6291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156501C2E5FC100DF6291 /* main.m */; };
 		80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156531C2E5FC100DF6291 /* AppDelegate.m */; };
-		80D156571C2E5FC100DF6291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156561C2E5FC100DF6291 /* ViewController.m */; };
-		80D1565A1C2E5FC100DF6291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D156581C2E5FC100DF6291 /* Main.storyboard */; };
 		80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D1565B1C2E5FC100DF6291 /* Assets.xcassets */; };
-		80D1565F1C2E5FC100DF6291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */; };
 		80D1566A1C2E5FC200DF6291 /* Nexusmail_PlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156691C2E5FC200DF6291 /* Nexusmail_PlusTests.m */; };
 		80D156751C2E5FC200DF6291 /* Nexusmail_PlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156741C2E5FC200DF6291 /* Nexusmail_PlusUITests.m */; };
+		80D156841C2E61D300DF6291 /* NPMailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156831C2E61D300DF6291 /* NPMailTableViewController.m */; };
+		80D156871C2E6E9E00DF6291 /* NPMailTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156861C2E6E9E00DF6291 /* NPMailTableViewDatasource.m */; };
+		80D1568A1C2E6ED800DF6291 /* NPMailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156891C2E6ED800DF6291 /* NPMailTableViewCell.m */; };
+		80FB7D6F1C2E88C100C6D609 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D6E1C2E88C100C6D609 /* SWRevealViewController.m */; };
+		80FB7D721C30B68300C6D609 /* NPDateFormatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D711C30B68300C6D609 /* NPDateFormatHelper.m */; };
+		80FB7D751C3202A300C6D609 /* NPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D741C3202A300C6D609 /* NPLoginViewController.m */; };
+		80FB7D791C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D781C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png */; };
+		80FB7D7B1C32210100C6D609 /* NEXUS+logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D7A1C32210100C6D609 /* NEXUS+logo.png */; };
+		80FB7D7E1C322B0100C6D609 /* NPStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D7D1C322B0100C6D609 /* NPStyling.m */; };
+		80FB7D831C3261CA00C6D609 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FB7D821C3261CA00C6D609 /* Security.framework */; };
+		80FB7D911C3274A400C6D609 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D8F1C3274A400C6D609 /* KeychainWrapper.m */; };
+		AB412F060F5FAE9AC00C17B6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F70753970A6B8E58D9C096 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345D3F41D0AB2ED2FA344801 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		35F70753970A6B8E58D9C096 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D1564C1C2E5FC100DF6291 /* Nexusmail Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nexusmail Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D156501C2E5FC100DF6291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80D156521C2E5FC100DF6291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80D156531C2E5FC100DF6291 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		80D156551C2E5FC100DF6291 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		80D156561C2E5FC100DF6291 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		80D156591C2E5FC100DF6291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80D1565B1C2E5FC100DF6291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		80D1565E1C2E5FC100DF6291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80D156601C2E5FC100DF6291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D156651C2E5FC200DF6291 /* Nexusmail PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nexusmail PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D156691C2E5FC200DF6291 /* Nexusmail_PlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nexusmail_PlusTests.m; sourceTree = "<group>"; };
@@ -51,6 +58,26 @@
 		80D156701C2E5FC200DF6291 /* Nexusmail PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nexusmail PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D156741C2E5FC200DF6291 /* Nexusmail_PlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nexusmail_PlusUITests.m; sourceTree = "<group>"; };
 		80D156761C2E5FC200DF6291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D156821C2E61D300DF6291 /* NPMailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPMailTableViewController.h; sourceTree = "<group>"; };
+		80D156831C2E61D300DF6291 /* NPMailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPMailTableViewController.m; sourceTree = "<group>"; };
+		80D156851C2E6E9E00DF6291 /* NPMailTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPMailTableViewDatasource.h; sourceTree = "<group>"; };
+		80D156861C2E6E9E00DF6291 /* NPMailTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPMailTableViewDatasource.m; sourceTree = "<group>"; };
+		80D156881C2E6ED800DF6291 /* NPMailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPMailTableViewCell.h; sourceTree = "<group>"; };
+		80D156891C2E6ED800DF6291 /* NPMailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPMailTableViewCell.m; sourceTree = "<group>"; };
+		80FB7D6D1C2E88C100C6D609 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		80FB7D6E1C2E88C100C6D609 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		80FB7D701C30B68300C6D609 /* NPDateFormatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPDateFormatHelper.h; sourceTree = "<group>"; };
+		80FB7D711C30B68300C6D609 /* NPDateFormatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPDateFormatHelper.m; sourceTree = "<group>"; };
+		80FB7D731C3202A300C6D609 /* NPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPLoginViewController.h; sourceTree = "<group>"; };
+		80FB7D741C3202A300C6D609 /* NPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPLoginViewController.m; sourceTree = "<group>"; };
+		80FB7D781C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UniversityOfWaterloo_logo_horiz_rgb.png; sourceTree = "<group>"; };
+		80FB7D7A1C32210100C6D609 /* NEXUS+logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NEXUS+logo.png"; sourceTree = "<group>"; };
+		80FB7D7C1C322B0100C6D609 /* NPStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPStyling.h; sourceTree = "<group>"; };
+		80FB7D7D1C322B0100C6D609 /* NPStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPStyling.m; sourceTree = "<group>"; };
+		80FB7D821C3261CA00C6D609 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		80FB7D8E1C3274A400C6D609 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		80FB7D8F1C3274A400C6D609 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		C7B9847E6B13EEB919AD8B45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FB7D831C3261CA00C6D609 /* Security.framework in Frameworks */,
+				AB412F060F5FAE9AC00C17B6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +114,8 @@
 				80D156681C2E5FC200DF6291 /* Nexusmail PlusTests */,
 				80D156731C2E5FC200DF6291 /* Nexusmail PlusUITests */,
 				80D1564D1C2E5FC100DF6291 /* Products */,
+				B55EE4EDCB524DD23838728F /* Pods */,
+				B144B8F79F57C863ED6C7AD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +132,26 @@
 		80D1564E1C2E5FC100DF6291 /* Nexusmail Plus */ = {
 			isa = PBXGroup;
 			children = (
+				80FB7D8B1C3274A400C6D609 /* KeyChainWrapper */,
+				80FB7D771C320D0E00C6D609 /* Resources */,
+				80FB7D6C1C2E88C100C6D609 /* SWRevealViewController */,
 				80D156521C2E5FC100DF6291 /* AppDelegate.h */,
 				80D156531C2E5FC100DF6291 /* AppDelegate.m */,
-				80D156551C2E5FC100DF6291 /* ViewController.h */,
-				80D156561C2E5FC100DF6291 /* ViewController.m */,
-				80D156581C2E5FC100DF6291 /* Main.storyboard */,
 				80D1565B1C2E5FC100DF6291 /* Assets.xcassets */,
-				80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */,
 				80D156601C2E5FC100DF6291 /* Info.plist */,
 				80D1564F1C2E5FC100DF6291 /* Supporting Files */,
+				80D156821C2E61D300DF6291 /* NPMailTableViewController.h */,
+				80D156831C2E61D300DF6291 /* NPMailTableViewController.m */,
+				80D156851C2E6E9E00DF6291 /* NPMailTableViewDatasource.h */,
+				80D156861C2E6E9E00DF6291 /* NPMailTableViewDatasource.m */,
+				80D156881C2E6ED800DF6291 /* NPMailTableViewCell.h */,
+				80D156891C2E6ED800DF6291 /* NPMailTableViewCell.m */,
+				80FB7D701C30B68300C6D609 /* NPDateFormatHelper.h */,
+				80FB7D711C30B68300C6D609 /* NPDateFormatHelper.m */,
+				80FB7D731C3202A300C6D609 /* NPLoginViewController.h */,
+				80FB7D741C3202A300C6D609 /* NPLoginViewController.m */,
+				80FB7D7C1C322B0100C6D609 /* NPStyling.h */,
+				80FB7D7D1C322B0100C6D609 /* NPStyling.m */,
 			);
 			path = "Nexusmail Plus";
 			sourceTree = "<group>";
@@ -140,6 +182,51 @@
 			path = "Nexusmail PlusUITests";
 			sourceTree = "<group>";
 		};
+		80FB7D6C1C2E88C100C6D609 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80FB7D6D1C2E88C100C6D609 /* SWRevealViewController.h */,
+				80FB7D6E1C2E88C100C6D609 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		80FB7D771C320D0E00C6D609 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80FB7D7A1C32210100C6D609 /* NEXUS+logo.png */,
+				80FB7D781C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80FB7D8B1C3274A400C6D609 /* KeyChainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				80FB7D8E1C3274A400C6D609 /* KeychainWrapper.h */,
+				80FB7D8F1C3274A400C6D609 /* KeychainWrapper.m */,
+			);
+			path = KeyChainWrapper;
+			sourceTree = "<group>";
+		};
+		B144B8F79F57C863ED6C7AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80FB7D821C3261CA00C6D609 /* Security.framework */,
+				35F70753970A6B8E58D9C096 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55EE4EDCB524DD23838728F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9847E6B13EEB919AD8B45 /* Pods.debug.xcconfig */,
+				345D3F41D0AB2ED2FA344801 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80D156791C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail Plus" */;
 			buildPhases = (
+				05E01AA8421DC305913203AB /* Check Pods Manifest.lock */,
 				80D156481C2E5FC100DF6291 /* Sources */,
 				80D156491C2E5FC100DF6291 /* Frameworks */,
 				80D1564A1C2E5FC100DF6291 /* Resources */,
+				11BF4D818B8380F6C37EA96C /* Embed Pods Frameworks */,
+				68BC3B4732C522EF82A13760 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D1565F1C2E5FC100DF6291 /* LaunchScreen.storyboard in Resources */,
 				80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */,
-				80D1565A1C2E5FC100DF6291 /* Main.storyboard in Resources */,
+				80FB7D791C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png in Resources */,
+				80FB7D7B1C32210100C6D609 /* NEXUS+logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +355,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05E01AA8421DC305913203AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		11BF4D818B8380F6C37EA96C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BC3B4732C522EF82A13760 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80D156481C2E5FC100DF6291 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D156571C2E5FC100DF6291 /* ViewController.m in Sources */,
+				80FB7D751C3202A300C6D609 /* NPLoginViewController.m in Sources */,
+				80D156841C2E61D300DF6291 /* NPMailTableViewController.m in Sources */,
+				80D1568A1C2E6ED800DF6291 /* NPMailTableViewCell.m in Sources */,
+				80D156871C2E6E9E00DF6291 /* NPMailTableViewDatasource.m in Sources */,
+				80FB7D7E1C322B0100C6D609 /* NPStyling.m in Sources */,
 				80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */,
 				80D156511C2E5FC100DF6291 /* main.m in Sources */,
+				80FB7D911C3274A400C6D609 /* KeychainWrapper.m in Sources */,
+				80FB7D6F1C2E88C100C6D609 /* SWRevealViewController.m in Sources */,
+				80FB7D721C30B68300C6D609 /* NPDateFormatHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,25 +451,6 @@
 			targetProxy = 80D156711C2E5FC200DF6291 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		80D156581C2E5FC100DF6291 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80D156591C2E5FC100DF6291 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		80D1565D1C2E5FC100DF6291 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80D1565E1C2E5FC100DF6291 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		80D156771C2E5FC200DF6291 /* Debug */ = {
@@ -411,6 +537,7 @@
 		};
 		80D1567A1C2E5FC200DF6291 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B9847E6B13EEB919AD8B45 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Nexusmail Plus/Info.plist";
@@ -422,6 +549,7 @@
 		};
 		80D1567B1C2E5FC200DF6291 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345D3F41D0AB2ED2FA344801 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Nexusmail Plus/Info.plist";
@@ -498,6 +626,7 @@
 				80D1567B1C2E5FC200DF6291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D1567C1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +635,7 @@
 				80D1567E1C2E5FC200DF6291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D1567F1C2E5FC200DF6291 /* Build configuration list for PBXNativeTarget "Nexusmail PlusUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +644,7 @@
 				80D156811C2E5FC200DF6291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

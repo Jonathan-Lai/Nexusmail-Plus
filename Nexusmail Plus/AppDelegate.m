@@ -7,16 +7,77 @@
 //
 
 #import "AppDelegate.h"
+#import "NPMailTableViewController.h"
+#import "NPLoginViewController.h"
+#import "KeychainWrapper.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) UINavigationController *navigationController;
+
+@property (strong, nonatomic) NPMailTableViewController *mailTableViewController;
+@property (strong, nonatomic) NPLoginViewController *loginViewController;
+@property (strong, nonatomic) KeychainWrapper *keychainItem;
 
 @end
 
 @implementation AppDelegate
 
+- (void)handleInvalidUserCredentials {
+    [self openLogin];
+    
+    // Show alert that the user's ID or Password are invalid
+    UIAlertController *errorAlertController = [UIAlertController alertControllerWithTitle:@"Login Error"
+                                                                               message: @"Wrong user ID or password"
+                                                                        preferredStyle:UIAlertControllerStyleAlert                   ];
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [errorAlertController dismissViewControllerAnimated:YES completion:nil];
+                         }];
+    [errorAlertController addAction: ok];
+    [self.loginViewController presentViewController:errorAlertController animated:YES completion:nil];
+}
+
+- (void)openLogin {
+    [self.keychainItem resetKeychainItem];
+    self.navigationController.viewControllers = [NSArray arrayWithObject:self.loginViewController];
+}
+
+- (void)openMailWithUserID:(NSString *)userID password:(NSString *)password {
+    [self.keychainItem mySetObject:password forKey:(__bridge NSString *)kSecValueData];
+    [self.keychainItem mySetObject:userID forKey:(__bridge NSString *)kSecAttrAccount];
+    
+    self.navigationController.viewControllers = [NSArray arrayWithObject:self.mailTableViewController];
+}
+
+- (NSString *)currentSessionUserID {
+    return [self.keychainItem myObjectForKey:(__bridge NSString *)kSecAttrAccount];
+}
+
+- (NSString *)currentSessionPassword {
+    return [self.keychainItem myObjectForKey:(__bridge NSString *)kSecValueData];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.keychainItem = [[KeychainWrapper alloc] init];
+    
+    self.mailTableViewController = [[NPMailTableViewController alloc] init];
+    self.loginViewController = [[NPLoginViewController alloc] init];
+    
+    // If there is a userID saved, open up the mail tableView, else open the login screen
+    if (self.currentSessionUserID.length) {
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mailTableViewController];
+    } else {
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
+    }
+    
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

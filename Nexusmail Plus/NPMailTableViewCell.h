@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NPMailTableViewCell.h
 //  Nexusmail Plus
 //
 //  Created by Jonathan Lai on 2015-12-26.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class MCOAbstractMessage;
 
+@interface NPMailTableViewCell : UITableViewCell
+
+- (void)setMessage:(MCOAbstractMessage *)message;
 
 @end
-
