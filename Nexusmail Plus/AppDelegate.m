@@ -9,14 +9,17 @@
 #import "AppDelegate.h"
 #import "NPMailTableViewController.h"
 #import "NPLoginViewController.h"
+#import "NPMailBoxSelectionController.h"
 #import "KeychainWrapper.h"
+#import "SWRevealViewController.h"
+#import "UIViewController+NPHelper.h"
 
 @interface AppDelegate ()
 
-@property (strong, nonatomic) UINavigationController *navigationController;
-
 @property (strong, nonatomic) NPMailTableViewController *mailTableViewController;
 @property (strong, nonatomic) NPLoginViewController *loginViewController;
+@property (strong, nonatomic) NPMailBoxSelectionController *mailBoxSelectionController;
+@property (strong, nonatomic) SWRevealViewController *revealViewController;
 @property (strong, nonatomic) KeychainWrapper *keychainItem;
 
 @end
@@ -25,32 +28,19 @@
 
 - (void)handleInvalidUserCredentials {
     [self openLogin];
-    
-    // Show alert that the user's ID or Password are invalid
-    UIAlertController *errorAlertController = [UIAlertController alertControllerWithTitle:@"Login Error"
-                                                                               message: @"Wrong user ID or password"
-                                                                        preferredStyle:UIAlertControllerStyleAlert                   ];
-    UIAlertAction* ok = [UIAlertAction
-                         actionWithTitle:@"OK"
-                         style:UIAlertActionStyleDefault
-                         handler:^(UIAlertAction * action)
-                         {
-                             [errorAlertController dismissViewControllerAnimated:YES completion:nil];
-                         }];
-    [errorAlertController addAction: ok];
-    [self.loginViewController presentViewController:errorAlertController animated:YES completion:nil];
+    [self.loginViewController showErrorMessage:@"Wrong user ID or password"];
 }
 
 - (void)openLogin {
     [self.keychainItem resetKeychainItem];
-    self.navigationController.viewControllers = [NSArray arrayWithObject:self.loginViewController];
+    self.window.rootViewController = self.loginViewController;
 }
 
 - (void)openMailWithUserID:(NSString *)userID password:(NSString *)password {
     [self.keychainItem mySetObject:password forKey:(__bridge NSString *)kSecValueData];
     [self.keychainItem mySetObject:userID forKey:(__bridge NSString *)kSecAttrAccount];
     
-    self.navigationController.viewControllers = [NSArray arrayWithObject:self.mailTableViewController];
+    self.window.rootViewController = self.revealViewController;
 }
 
 - (NSString *)currentSessionUserID {
@@ -66,17 +56,25 @@
     
     self.keychainItem = [[KeychainWrapper alloc] init];
     
-    self.mailTableViewController = [[NPMailTableViewController alloc] init];
     self.loginViewController = [[NPLoginViewController alloc] init];
+    
+    // Set up the reveal view controller
+    self.mailTableViewController = [[NPMailTableViewController alloc] init];
+    self.mailBoxSelectionController = [[NPMailBoxSelectionController alloc] init];
+    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:self.mailTableViewController];
+    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:self.mailBoxSelectionController];
+    self.revealViewController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:frontNavigationController];
+    self.mailTableViewController.revealViewController = self.revealViewController;
+    self.mailBoxSelectionController.revealViewController = self.revealViewController;
+    self.mailBoxSelectionController.mailTableViewController = self.mailTableViewController;
     
     // If there is a userID saved, open up the mail tableView, else open the login screen
     if (self.currentSessionUserID.length) {
-        self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mailTableViewController];
+        self.window.rootViewController = self.revealViewController;
     } else {
-        self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
+        self.window.rootViewController = self.loginViewController;
     }
     
-    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

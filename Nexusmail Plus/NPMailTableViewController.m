@@ -8,10 +8,23 @@
 
 #import "NPMailTableViewController.h"
 #import "NPMailTableViewDatasource.h"
+#import "SWRevealViewController.h"
+
+static NSString *const inboxFolderName = @"INBOX";
+static NSString *const sentFolderName = @"INBOX.Sent";
+static NSString *const spamFolderName = @"INBOX.SPAM";
+
+static NSString *const inboxTitle = @"Inbox";
+static NSString *const sentTitle = @"Sent";
+static NSString *const spamTitle = @"Spam";
+
+static const CGFloat activityIndicatorTopMargin = 300.0f;
 
 @interface NPMailTableViewController()
 
 @property (nonatomic, strong) NPMailTableViewDatasource *datasource;
+@property (nonatomic, strong) UIBarButtonItem *revealButtonItem;
+@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -19,25 +32,35 @@
 
 - (id)init {
     if (self = [super initWithNibName:nil bundle:nil]) {
-        // Nothing to do here
+        self.title = inboxTitle;    // default folder is inbox
     }
     return self;
 }
 
-- (void)showErrorMessage:(NSString *)message {
-    // Show alert that the user's ID or Password are invalid
-    UIAlertController *errorAlertController = [UIAlertController alertControllerWithTitle:@"Login Error"
-                                                                                  message: @"Wrong user ID or password"
-                                                                           preferredStyle:UIAlertControllerStyleAlert                   ];
-    UIAlertAction* ok = [UIAlertAction
-                         actionWithTitle:@"OK"
-                         style:UIAlertActionStyleDefault
-                         handler:^(UIAlertAction * action)
-                         {
-                             [errorAlertController dismissViewControllerAnimated:YES completion:nil];
-                         }];
-    [errorAlertController addAction: ok];
-    [self presentViewController:errorAlertController animated:YES completion:nil];
+- (void)showLoading:(BOOL)loading {
+    if (loading) {
+        [self.activityIndicator startAnimating];
+    } else {
+        [self.activityIndicator stopAnimating];
+    }
+}
+
+- (void)showInbox {
+    self.title = inboxTitle;
+    self.datasource.folder = inboxFolderName;
+    [self.datasource refresh];
+}
+
+- (void)showSent {
+    self.title = sentTitle;
+    self.datasource.folder = sentFolderName;
+    [self.datasource refresh];
+}
+
+- (void)showSpam {
+    self.title = spamTitle;
+    self.datasource.folder = spamFolderName;
+    [self.datasource refresh];
 }
 
 #pragma mark - UIViewController
@@ -52,14 +75,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    
+    self.revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon.png"]
+                                                                         style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
+    self.revealButtonItem.tintColor = [UIColor blackColor];
+    self.navigationItem.leftBarButtonItem = self.revealButtonItem;
+    
     self.datasource = [[NPMailTableViewDatasource alloc] init];
     self.datasource.tableViewController = self;
+    self.datasource.folder = inboxFolderName;  // default folder should be the inbox
     self.tableView.dataSource = self.datasource;
     self.tableView.delegate = self.datasource;
     
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.tableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(_refresh) forControlEvents:UIControlEventValueChanged];
+    
+    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.activityIndicator.center = CGPointMake(self.tableView.center.x, activityIndicatorTopMargin);
+    self.activityIndicator.hidesWhenStopped = YES;
+    self.activityIndicator.hidden = NO;
+    [self.tableView addSubview:self.activityIndicator];
 }
 
 #pragma mark - Private

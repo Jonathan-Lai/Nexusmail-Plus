@@ -14,6 +14,7 @@
 @interface NPMailTableViewDatasource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) NPMailTableViewController *tableViewController;
+@property (nonatomic, strong) NSString *folder;
 
 - (void)refresh;
 

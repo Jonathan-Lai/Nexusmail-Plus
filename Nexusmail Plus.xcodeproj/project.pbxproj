@@ -23,6 +23,11 @@
 		80FB7D7E1C322B0100C6D609 /* NPStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D7D1C322B0100C6D609 /* NPStyling.m */; };
 		80FB7D831C3261CA00C6D609 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FB7D821C3261CA00C6D609 /* Security.framework */; };
 		80FB7D911C3274A400C6D609 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D8F1C3274A400C6D609 /* KeychainWrapper.m */; };
+		80FB7D941C32822F00C6D609 /* UIViewController+NPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D931C32822F00C6D609 /* UIViewController+NPHelper.m */; };
+		80FB7D971C328F4500C6D609 /* NPMailBoxSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */; };
+		80FB7D9A1C32982500C6D609 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D981C32982500C6D609 /* reveal-icon@2x.png */; };
+		80FB7D9B1C32982500C6D609 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D991C32982500C6D609 /* reveal-icon.png */; };
+		80FB7D9E1C32D95400C6D609 /* NPViewEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */; };
 		AB412F060F5FAE9AC00C17B6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F70753970A6B8E58D9C096 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +82,14 @@
 		80FB7D821C3261CA00C6D609 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		80FB7D8E1C3274A400C6D609 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		80FB7D8F1C3274A400C6D609 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		80FB7D921C32822F00C6D609 /* UIViewController+NPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NPHelper.h"; sourceTree = "<group>"; };
+		80FB7D931C32822F00C6D609 /* UIViewController+NPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NPHelper.m"; sourceTree = "<group>"; };
+		80FB7D951C328F4500C6D609 /* NPMailBoxSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPMailBoxSelectionController.h; sourceTree = "<group>"; };
+		80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPMailBoxSelectionController.m; sourceTree = "<group>"; };
+		80FB7D981C32982500C6D609 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
+		80FB7D991C32982500C6D609 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
+		80FB7D9C1C32D95400C6D609 /* NPViewEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPViewEmailViewController.h; sourceTree = "<group>"; };
+		80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPViewEmailViewController.m; sourceTree = "<group>"; };
 		C7B9847E6B13EEB919AD8B45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +165,12 @@
 				80FB7D741C3202A300C6D609 /* NPLoginViewController.m */,
 				80FB7D7C1C322B0100C6D609 /* NPStyling.h */,
 				80FB7D7D1C322B0100C6D609 /* NPStyling.m */,
+				80FB7D921C32822F00C6D609 /* UIViewController+NPHelper.h */,
+				80FB7D931C32822F00C6D609 /* UIViewController+NPHelper.m */,
+				80FB7D951C328F4500C6D609 /* NPMailBoxSelectionController.h */,
+				80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */,
+				80FB7D9C1C32D95400C6D609 /* NPViewEmailViewController.h */,
+				80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */,
 			);
 			path = "Nexusmail Plus";
 			sourceTree = "<group>";
@@ -194,6 +213,8 @@
 		80FB7D771C320D0E00C6D609 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				80FB7D981C32982500C6D609 /* reveal-icon@2x.png */,
+				80FB7D991C32982500C6D609 /* reveal-icon.png */,
 				80FB7D7A1C32210100C6D609 /* NEXUS+logo.png */,
 				80FB7D781C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png */,
 			);
@@ -333,9 +354,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FB7D9A1C32982500C6D609 /* reveal-icon@2x.png in Resources */,
 				80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */,
 				80FB7D791C320D2400C6D609 /* UniversityOfWaterloo_logo_horiz_rgb.png in Resources */,
 				80FB7D7B1C32210100C6D609 /* NEXUS+logo.png in Resources */,
+				80FB7D9B1C32982500C6D609 /* reveal-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +435,13 @@
 				80D156841C2E61D300DF6291 /* NPMailTableViewController.m in Sources */,
 				80D1568A1C2E6ED800DF6291 /* NPMailTableViewCell.m in Sources */,
 				80D156871C2E6E9E00DF6291 /* NPMailTableViewDatasource.m in Sources */,
+				80FB7D941C32822F00C6D609 /* UIViewController+NPHelper.m in Sources */,
+				80FB7D971C328F4500C6D609 /* NPMailBoxSelectionController.m in Sources */,
 				80FB7D7E1C322B0100C6D609 /* NPStyling.m in Sources */,
 				80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */,
 				80D156511C2E5FC100DF6291 /* main.m in Sources */,
 				80FB7D911C3274A400C6D609 /* KeychainWrapper.m in Sources */,
+				80FB7D9E1C32D95400C6D609 /* NPViewEmailViewController.m in Sources */,
 				80FB7D6F1C2E88C100C6D609 /* SWRevealViewController.m in Sources */,
 				80FB7D721C30B68300C6D609 /* NPDateFormatHelper.m in Sources */,
 			);

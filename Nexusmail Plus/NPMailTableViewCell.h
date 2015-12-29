@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class MCOAbstractMessage;
+@class MCOIMAPMessage;
 
 @interface NPMailTableViewCell : UITableViewCell
 
-- (void)setMessage:(MCOAbstractMessage *)message;
+- (void)setMessage:(MCOIMAPMessage *)message;
 
 @end

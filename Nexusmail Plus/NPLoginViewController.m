@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NPLoginViewController.h"
 #import "NPStyling.h"
+#import "UIViewController+NPHelper.h"
 
 static const NSInteger kUWLogoWidth = 300;
 static const NSInteger kUWLogoHeight = 120;
@@ -74,6 +75,7 @@ static const NSInteger kBottomMargin = 250;
         [_loginButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
         _loginButton.titleLabel.font = [NPStyling mediumFont];
         _loginButton.backgroundColor = [NPStyling blueColor];
+        [_loginButton addTarget:self action:@selector(_login) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_loginButton];
         
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_dismissKeyboard)];
@@ -121,7 +123,11 @@ static const NSInteger kBottomMargin = 250;
 }
 
 - (void)_login {
-    [sharedAppDelegate openMailWithUserID:self.userIDTextField.text password:self.passwordTextField.text];
+    if (self.userIDTextField.text.length && self.passwordTextField.text.length) {
+        [sharedAppDelegate openMailWithUserID:self.userIDTextField.text password:self.passwordTextField.text];
+    } else {
+        [self showErrorMessage:@"Type user ID and password"];
+    }
 }
 
 #pragma mark - UITextFieldDelegate
@@ -136,13 +142,6 @@ static const NSInteger kBottomMargin = 250;
         [self _login];
     }
     return YES;
-}
-
-#pragma mark - UIViewController
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
 }
 
 @end

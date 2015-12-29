@@ -34,7 +34,7 @@ static const NSInteger kLabelMargin = 2;
         [self.contentView addSubview:_subjectLabel];
         
         _emailOrNameLabel = [[UILabel alloc] init];
-        _emailOrNameLabel.font = [NPStyling mediumBoldFont];
+        _emailOrNameLabel.font = [NPStyling largeBoldFont];
         _emailOrNameLabel.textColor = [UIColor blackColor];
         _emailOrNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
         [self.contentView addSubview:_emailOrNameLabel];
@@ -56,12 +56,12 @@ static const NSInteger kLabelMargin = 2;
                                @"kLabelMargin" : @(kLabelMargin) };
     
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(kSideMargin)-[_emailOrNameLabel]-(>=0)-[_dateLabel]-(kSideMargin)-|" options:0 metrics:metrics views:views]];
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(kSideMargin)-[_subjectLabel]" options:0 metrics:metrics views:views]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(kSideMargin)-[_subjectLabel]-(kSideMargin)-|" options:0 metrics:metrics views:views]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(kSideMargin)-[_emailOrNameLabel]-(kLabelMargin)-[_subjectLabel]" options:0 metrics:metrics views:views]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(kSideMargin)-[_dateLabel]" options:0 metrics:metrics views:views]];
 }
 
-- (void)setMessage:(MCOAbstractMessage *)message {
+- (void)setMessage:(MCOIMAPMessage *)message {
     _subjectLabel.text = message.header.subject;
     _emailOrNameLabel.text = message.header.from.displayName;
     _dateLabel.text = [NPDateFormatHelper stringFromDate:message.header.date];
