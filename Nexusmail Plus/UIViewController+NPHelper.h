@@ -10,6 +10,8 @@
 
 @interface UIViewController (NPHelper)
 
+- (void)showLoading:(BOOL)loading;
+
 - (void)showErrorMessage:(NSString *)message;
 
 @end

@@ -18,13 +18,10 @@ static NSString *const inboxTitle = @"Inbox";
 static NSString *const sentTitle = @"Sent";
 static NSString *const spamTitle = @"Spam";
 
-static const CGFloat activityIndicatorTopMargin = 300.0f;
-
 @interface NPMailTableViewController()
 
 @property (nonatomic, strong) NPMailTableViewDatasource *datasource;
 @property (nonatomic, strong) UIBarButtonItem *revealButtonItem;
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -35,14 +32,6 @@ static const CGFloat activityIndicatorTopMargin = 300.0f;
         self.title = inboxTitle;    // default folder is inbox
     }
     return self;
-}
-
-- (void)showLoading:(BOOL)loading {
-    if (loading) {
-        [self.activityIndicator startAnimating];
-    } else {
-        [self.activityIndicator stopAnimating];
-    }
 }
 
 - (void)showInbox {
@@ -91,12 +80,6 @@ static const CGFloat activityIndicatorTopMargin = 300.0f;
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.tableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(_refresh) forControlEvents:UIControlEventValueChanged];
-    
-    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    self.activityIndicator.center = CGPointMake(self.tableView.center.x, activityIndicatorTopMargin);
-    self.activityIndicator.hidesWhenStopped = YES;
-    self.activityIndicator.hidden = NO;
-    [self.tableView addSubview:self.activityIndicator];
 }
 
 #pragma mark - Private

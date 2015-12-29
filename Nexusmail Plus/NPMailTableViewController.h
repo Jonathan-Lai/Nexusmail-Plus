@@ -14,8 +14,6 @@
 
 @property (nonatomic, weak) SWRevealViewController *revealViewController;
 
-- (void)showLoading:(BOOL)loading;
-
 - (void)showInbox;
 - (void)showSent;
 - (void)showSpam;

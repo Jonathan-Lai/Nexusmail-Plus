@@ -8,7 +8,32 @@
 
 #import "UIViewController+NPHelper.h"
 
+static const CGFloat activityIndicatorTopMargin = 300.0f;
+
 @implementation UIViewController (NPHelper)
+
+- (void)showLoading:(BOOL)loading {
+    // All view controllers will share one activity indicator
+    static UIActivityIndicatorView *activityIndicator;
+    
+    if (loading) {
+        if (activityIndicator == nil) {
+            activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+            activityIndicator.hidesWhenStopped = YES;
+            activityIndicator.hidden = NO;
+            
+        } else {
+            [activityIndicator removeFromSuperview];
+        }
+        
+        activityIndicator.center = CGPointMake(self.view.center.x, activityIndicatorTopMargin);
+        [self.view addSubview:activityIndicator];
+        [activityIndicator startAnimating];
+    } else {
+        [activityIndicator stopAnimating];
+    }
+    
+}
 
 - (void)showErrorMessage:(NSString *)message {
     // Show alert that the user's ID or Password are invalid
