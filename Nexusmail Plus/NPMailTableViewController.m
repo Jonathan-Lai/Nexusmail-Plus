@@ -80,6 +80,9 @@ static NSString *const spamTitle = @"Spam";
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.tableView addSubview:self.refreshControl];
     [self.refreshControl addTarget:self action:@selector(_refresh) forControlEvents:UIControlEventValueChanged];
+    
+    [self.revealViewController panGestureRecognizer];
+    [self.revealViewController tapGestureRecognizer];
 }
 
 #pragma mark - Private
