@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806927811C55D1D40006999C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806927801C55D1D40006999C /* CoreGraphics.framework */; };
+		806927831C55D20C0006999C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806927821C55D20C0006999C /* UIKit.framework */; };
+		806927851C55D3110006999C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806927841C55D3110006999C /* ImageIO.framework */; };
+		806F9EE81C555426004781F9 /* MCTMsgViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 806F9EE71C555426004781F9 /* MCTMsgViewController.mm */; };
 		80D156511C2E5FC100DF6291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156501C2E5FC100DF6291 /* main.m */; };
 		80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D156531C2E5FC100DF6291 /* AppDelegate.m */; };
 		80D1565C1C2E5FC100DF6291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D1565B1C2E5FC100DF6291 /* Assets.xcassets */; };
@@ -27,7 +31,7 @@
 		80FB7D971C328F4500C6D609 /* NPMailBoxSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */; };
 		80FB7D9A1C32982500C6D609 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D981C32982500C6D609 /* reveal-icon@2x.png */; };
 		80FB7D9B1C32982500C6D609 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FB7D991C32982500C6D609 /* reveal-icon.png */; };
-		80FB7D9E1C32D95400C6D609 /* NPViewEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */; };
+		80FB7DA21C35F57A00C6D609 /* MCOMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 80FB7DA11C35F57A00C6D609 /* MCOMessageView.mm */; };
 		AB412F060F5FAE9AC00C17B6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F70753970A6B8E58D9C096 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,11 @@
 /* Begin PBXFileReference section */
 		345D3F41D0AB2ED2FA344801 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		35F70753970A6B8E58D9C096 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		806927801C55D1D40006999C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		806927821C55D20C0006999C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		806927841C55D3110006999C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		806F9EE61C555426004781F9 /* MCTMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTMsgViewController.h; sourceTree = "<group>"; };
+		806F9EE71C555426004781F9 /* MCTMsgViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCTMsgViewController.mm; sourceTree = "<group>"; };
 		80D1564C1C2E5FC100DF6291 /* Nexusmail Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nexusmail Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D156501C2E5FC100DF6291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80D156521C2E5FC100DF6291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,8 +97,8 @@
 		80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPMailBoxSelectionController.m; sourceTree = "<group>"; };
 		80FB7D981C32982500C6D609 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		80FB7D991C32982500C6D609 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
-		80FB7D9C1C32D95400C6D609 /* NPViewEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPViewEmailViewController.h; sourceTree = "<group>"; };
-		80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPViewEmailViewController.m; sourceTree = "<group>"; };
+		80FB7DA01C35F57A00C6D609 /* MCOMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOMessageView.h; sourceTree = "<group>"; };
+		80FB7DA11C35F57A00C6D609 /* MCOMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOMessageView.mm; sourceTree = "<group>"; };
 		C7B9847E6B13EEB919AD8B45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806927851C55D3110006999C /* ImageIO.framework in Frameworks */,
+				806927831C55D20C0006999C /* UIKit.framework in Frameworks */,
+				806927811C55D1D40006999C /* CoreGraphics.framework in Frameworks */,
 				80FB7D831C3261CA00C6D609 /* Security.framework in Frameworks */,
 				AB412F060F5FAE9AC00C17B6 /* libPods.a in Frameworks */,
 			);
@@ -145,6 +157,10 @@
 		80D1564E1C2E5FC100DF6291 /* Nexusmail Plus */ = {
 			isa = PBXGroup;
 			children = (
+				806F9EE61C555426004781F9 /* MCTMsgViewController.h */,
+				806F9EE71C555426004781F9 /* MCTMsgViewController.mm */,
+				80FB7DA01C35F57A00C6D609 /* MCOMessageView.h */,
+				80FB7DA11C35F57A00C6D609 /* MCOMessageView.mm */,
 				80FB7D8B1C3274A400C6D609 /* KeyChainWrapper */,
 				80FB7D771C320D0E00C6D609 /* Resources */,
 				80FB7D6C1C2E88C100C6D609 /* SWRevealViewController */,
@@ -169,8 +185,6 @@
 				80FB7D931C32822F00C6D609 /* UIViewController+NPHelper.m */,
 				80FB7D951C328F4500C6D609 /* NPMailBoxSelectionController.h */,
 				80FB7D961C328F4500C6D609 /* NPMailBoxSelectionController.m */,
-				80FB7D9C1C32D95400C6D609 /* NPViewEmailViewController.h */,
-				80FB7D9D1C32D95400C6D609 /* NPViewEmailViewController.m */,
 			);
 			path = "Nexusmail Plus";
 			sourceTree = "<group>";
@@ -233,6 +247,9 @@
 		B144B8F79F57C863ED6C7AD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				806927841C55D3110006999C /* ImageIO.framework */,
+				806927821C55D20C0006999C /* UIKit.framework */,
+				806927801C55D1D40006999C /* CoreGraphics.framework */,
 				80FB7D821C3261CA00C6D609 /* Security.framework */,
 				35F70753970A6B8E58D9C096 /* libPods.a */,
 			);
@@ -432,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806F9EE81C555426004781F9 /* MCTMsgViewController.mm in Sources */,
 				80FB7D751C3202A300C6D609 /* NPLoginViewController.m in Sources */,
 				80D156841C2E61D300DF6291 /* NPMailTableViewController.m in Sources */,
 				80D1568A1C2E6ED800DF6291 /* NPMailTableViewCell.m in Sources */,
@@ -440,9 +458,9 @@
 				80FB7D971C328F4500C6D609 /* NPMailBoxSelectionController.m in Sources */,
 				80FB7D7E1C322B0100C6D609 /* NPStyling.m in Sources */,
 				80D156541C2E5FC100DF6291 /* AppDelegate.m in Sources */,
+				80FB7DA21C35F57A00C6D609 /* MCOMessageView.mm in Sources */,
 				80D156511C2E5FC100DF6291 /* main.m in Sources */,
 				80FB7D911C3274A400C6D609 /* KeychainWrapper.m in Sources */,
-				80FB7D9E1C32D95400C6D609 /* NPViewEmailViewController.m in Sources */,
 				80FB7D6F1C2E88C100C6D609 /* SWRevealViewController.m in Sources */,
 				80FB7D721C30B68300C6D609 /* NPDateFormatHelper.m in Sources */,
 			);

@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "NPMailTableViewDatasource.h"
+#import "MCTMsgViewController.h"
 #import "NPMailTableViewCell.h"
 #import "NPMailTableViewController.h"
-#import "NPViewEmailViewController.h"
+#import "NPMailTableViewDatasource.h"
 #import "UIViewController+NPHelper.h"
 
 #import <MailCore/MailCore.h>
@@ -44,7 +44,10 @@ static const CGFloat kCellHeight = 90.0f;
     [self.tableViewController showLoading:YES];
     
     // Fetch all emails
-    MCOIMAPMessagesRequestKind requestKind = MCOIMAPMessagesRequestKindHeaders;
+    MCOIMAPMessagesRequestKind requestKind = (MCOIMAPMessagesRequestKind)
+    (MCOIMAPMessagesRequestKindHeaders | MCOIMAPMessagesRequestKindStructure |
+     MCOIMAPMessagesRequestKindInternalDate | MCOIMAPMessagesRequestKindHeaderSubject |
+     MCOIMAPMessagesRequestKindFlags);
     MCOIndexSet *uids = [MCOIndexSet indexSetWithRange:MCORangeMake(1, UINT64_MAX)];
     MCOIMAPFetchMessagesOperation *fetchOperation = [self.inComingSession fetchMessagesOperationWithFolder:self.folder requestKind:requestKind uids:uids];
     [fetchOperation start:^(NSError * error, NSArray * fetchedMessages, MCOIndexSet * vanishedMessages) {
@@ -89,8 +92,12 @@ static const CGFloat kCellHeight = 90.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NPViewEmailViewController *viewEmailController = [[NPViewEmailViewController alloc] initWithSession:self.inComingSession message:self.messages[indexPath.row] messageFolder:self.folder];
-    [self.tableViewController.navigationController pushViewController:viewEmailController animated:YES];
+    MCOIMAPMessage *msg = self.messages[indexPath.row];
+    MCTMsgViewController *vc = [[MCTMsgViewController alloc] init];
+    vc.folder = @"INBOX";
+    vc.message = msg;
+    vc.session = self.inComingSession;
+    [self.tableViewController.navigationController pushViewController:vc animated:YES];
 }
 
 @end

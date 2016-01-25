@@ -6,8 +6,8 @@
 //  Copyright © 2015 Hoi Fung Lai. All rights reserved.
 //
 
-#import "NPMailTableViewCell.h"
 #import "NPDateFormatHelper.h"
+#import "NPMailTableViewCell.h"
 #import "NPStyling.h"
 
 #import <MailCore/MailCore.h>
